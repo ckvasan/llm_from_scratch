@@ -1,0 +1,285 @@
+GPTModel(
+  (token_embedding_layer): Embedding(50257, 768)
+  (pos_embedding_layer): Embedding(256, 768)
+  (drop_emb): Dropout(p=0.1, inplace=False)
+  (transformer_blocks): Sequential(
+    (0): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (1): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (2): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (3): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (4): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (5): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (6): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (7): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (8): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (9): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (10): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (11): Transformer(
+      (attn_block): MultiHeadMaskedAttention(
+        (heads): ModuleList(
+          (0-11): 12 x MaskedAttention(
+            (W_query): Linear(in_features=768, out_features=64, bias=True)
+            (W_key): Linear(in_features=768, out_features=64, bias=True)
+            (W_value): Linear(in_features=768, out_features=64, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+        (out_proj): Linear(in_features=768, out_features=768, bias=True)
+      )
+      (ff): FeedForward(
+        (layers): Sequential(
+          (0): Linear(in_features=768, out_features=3072, bias=True)
+          (1): GELU()
+          (2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+      )
+      (norm1): LayerNorm()
+      (norm2): LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (final_norm): LayerNorm()
+  (out_head): Linear(in_features=768, out_features=50257, bias=False)
+)
